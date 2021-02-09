@@ -34,11 +34,11 @@ class ViewEmployeeComponent extends Component{
 						<div className="row">
 							<div className="form-group">
 								<br></br>
-							<label>Employee First Name: </label>
+							<label>First Name: &nbsp;</label>
 								{this.state.employee.firstName}<br></br>
-							<label>Employee Last Name: </label>
+							<label>Last Name: &nbsp;</label>
 								{this.state.employee.lastName}<br></br>
-							<label>Employee Email Id: </label>
+							<label>Email Id: &nbsp;</label>
 								{this.state.employee.emailId}
 							<div className="form-group">
 								<br></br>

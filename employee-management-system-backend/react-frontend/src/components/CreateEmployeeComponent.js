@@ -7,7 +7,7 @@ class CreateEmployeeComponent extends Component {
 		super(props);
 
 		this.state = {
-			// step 2
+			// step 2 get id from the route
 			id: this.props.match.params.id,
 			firstName: '',
 			lastName: '',
@@ -40,11 +40,11 @@ class CreateEmployeeComponent extends Component {
 
 	saveEmployee = (e) => {
 		e.preventDefault();
-		let employee = { firstName: this.state.firstName, lastName: this.state.lastName, emailId: this.state.emailId };
+		let employee = {firstName: this.state.firstName, lastName: this.state.lastName, emailId: this.state.emailId };
 		console.log('employee => ' + JSON.stringify(employee));
 
 		// step 5
-		if (this.props.id === '_add') {
+		if (this.state.id === '_add') {
 			EmployeeService.createEmployee(employee).then(response => {
 				this.props.history.push('/employees');
 			})
