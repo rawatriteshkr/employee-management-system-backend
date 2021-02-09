@@ -51,9 +51,9 @@ class ListEmployeeComponent extends Component {
 					<table className="table table-striped table-bordered">
 						<thead>
 							<tr>
-								<th> Employee First Name</th>
-								<th> Employee Last Name</th>
-								<th> Employee Email Id</th>
+								<th> First Name</th>
+								<th> Last Name</th>
+								<th> Email Id</th>
 								<th> Actions </th>
 							</tr>
 						</thead>
